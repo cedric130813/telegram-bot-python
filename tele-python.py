@@ -75,3 +75,11 @@ def YunaGIF(update, context):
 
 yunagif_handler = CommandHandler('YunaGIF', YunaGIF)
 dispatcher.add_handler(yunagif_handler)
+
+#mimics the GIF you send
+#echoGIF
+def echoGIF(update, context):
+    context.bot.send_animation(chat_id=update.effective_chat.id, animation=update.message.animation)
+
+echoGIF_handler = MessageHandler(Filters.animation & (~Filters.command), echoGIF)
+dispatcher.add_handler(echoGIF_handler)
