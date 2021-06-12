@@ -48,7 +48,7 @@ dispatcher.add_handler(bias_handler)
 # sendPhoto
 def sendPhoto(update, context):
     context.bot.send_photo(chat_id=update.effective_chat.id,
-                           photo=open("C:/Users/iance/OneDrive/Desktop/ITZY Telegram Project/chaeshook.jpg", 'rb'),
+                           photo=open("chaeshook.jpg", 'rb'),
                            caption=None)
 
 
@@ -71,7 +71,7 @@ dispatcher.add_handler(yejiphoto_handler)
 #sends a gif of Yuna
 def YunaGIF(update, context):
     context.bot.send_animation(chat_id=update.effective_chat.id,
-                               animation=open("C:/Users/iance/OneDrive/Desktop/ITZY Telegram Project/yuna_gif.gif", 'rb')).animation
+                               animation=open("yuna_gif.gif", 'rb')).animation
 
 yunagif_handler = CommandHandler('YunaGIF', YunaGIF)
 dispatcher.add_handler(yunagif_handler)
