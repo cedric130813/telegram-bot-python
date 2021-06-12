@@ -19,7 +19,7 @@ for entries in all_videos:
 new_list = ', '.join(all_links[0:3])
 print(new_list)
 
-updater = Updater(token='1780866236:AAFX0dSVEneQNj0THtSbkFgdAKPV_zH8foU', use_context=True)
+updater = Updater(token=<TOKEN>, use_context=True)
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 dispatcher = updater.dispatcher
